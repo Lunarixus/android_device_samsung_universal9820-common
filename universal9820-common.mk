@@ -16,6 +16,8 @@
 
 COMMON_PATH := device/samsung/universal9820-common
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/universal9820-common/universal9820-common-vendor.mk)
 
