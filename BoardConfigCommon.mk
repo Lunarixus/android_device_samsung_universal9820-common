@@ -99,5 +99,8 @@ BOARD_VNDK_VERSION := current
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Samsung HALs
+TARGET_POWERHAL_VARIANT := samsung
+
 # Inherit from the proprietary version
 -include vendor/samsung/universal9820-common/BoardConfigVendor.mk
