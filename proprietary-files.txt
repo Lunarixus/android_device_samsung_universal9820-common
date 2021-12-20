@@ -1,0 +1,3 @@
+# Hotword Enrollment
+-priv-app/HotwordEnrollmentOKGoogleExCORTEXM4/HotwordEnrollmentOKGoogleExCORTEXM4.apk;PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleExCORTEXM4/HotwordEnrollmentXGoogleExCORTEXM4.apk;PRESIGNED
