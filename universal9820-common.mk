@@ -214,6 +214,26 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Wifi
+PRODUCT_PACKAGES += \
+    macloader \
+    wifiloader \
+    hostapd \
+    wificond \
+    wifilogd \
+    wlutil \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+    android.hardware.wifi@1.0-service \
+    android.hardware.wifi@1.0 \
+    android.hardware.wifi@1.0-impl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_OUT_VENDOR)/etc/wifi/wpa_supplicant_conf.conf \
+    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.con
+
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
