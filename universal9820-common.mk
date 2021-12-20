@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey \
     android.hardware.drm@1.0-impl
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.samsung
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
