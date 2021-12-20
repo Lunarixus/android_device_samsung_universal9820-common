@@ -178,6 +178,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service.exynos
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.baseband.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.exynos9820.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.exynos9820.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.exynos9820.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.exynos9820.usb.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.gps.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.nfc.samsung.rc \
+    $(LOCAL_PATH)/rootdir/etc/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/wifi.rc \
+    $(LOCAL_PATH)/rootdir/etc/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/wifi_brcm.rc \
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
