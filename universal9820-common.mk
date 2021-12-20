@@ -57,6 +57,16 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-impl \
     android.hardware.configstore@1.0-service
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0 \
+    android.hardware.drm@1.1 \
+    libfwdlockengine \
+    libdrmclearkeyplugin \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.2-service.clearkey \
+    android.hardware.drm@1.0-impl
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
